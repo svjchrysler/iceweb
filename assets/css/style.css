@@ -1,0 +1,317 @@
+
+nav {
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 0;
+}
+
+.align-horizontal-vertical {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin-clean {
+  margin: 0;
+}
+
+.margin-clean-important {
+	margin: 0 !important;
+}
+
+.margin-bottom-header {
+	margin-bottom: 1em;
+}
+
+.padding-clean {
+  padding: 0;
+}
+
+.padding-clean-important {
+	padding: 0 !important;
+}
+
+.text-color-verde {
+  color: #4ACA74;
+}
+
+.text-nav-size {
+  font-size: 12pt;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.width-item-nav {
+  width: 15em;
+  text-align: center;
+}
+
+.height-nav {
+  height: 3em;
+}
+
+.hide-overflow {
+  overflow: hidden;
+}
+
+.align-horizontal-vertical li a:hover {
+  background-color: #4ACA74;
+  color: #FFFFFF;
+}
+
+.align-vertical {
+	display: flex;
+	align-items: center;
+}
+
+.text-title-nav {
+  font-weight: 700;
+  font-size: 15pt;
+}
+
+@media (max-width: 979px) {
+	.height-nav {
+		height: 4em !important;
+	}
+
+	.max-height-nav {
+		max-height: 4em !important;
+	}
+}
+
+@media (max-width: 980px) {
+	nav {
+		background-color: #4ACA74;
+		box-shadow: 0 10px 0 10px;
+  	}
+
+  	.shadow-nav-phone {
+		box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 0 0 10px rgba(0, 0, 0, .2) inset;
+	}
+}
+
+@media (min-width: 2000px) {
+  .width-item-nav {
+	width: 20em;
+	text-align: center;
+  }
+
+  .text-nav-size {
+	font-size: 15pt;
+  }
+
+  .height-nav {
+	height: 5em;
+  }
+}
+
+.max-height-header {
+  max-height: 7em;
+}
+
+.height-header {
+  height: 7em;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.height-full {
+	height: 100%;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.btn-color {
+  background-color: #4ACA74;
+}
+
+.btn-color:hover {
+  background-color: #4ACA74; 
+}
+
+.margin-input-search {
+  margin: 0 1em 0 5em !important;
+}
+
+.height-50 {
+	max-height: 3em;
+}
+
+.background-header {
+	background-color: #FFF;
+}
+
+.parallax-container {
+	height: 100vh;
+}
+
+.elevation-header {
+	z-index: 1020;
+}
+
+.background-image {
+	background: url('../images/institucion/background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.shadow-nav {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .2), 0 0 5px rgba(0, 0, 0, .1) inset;
+}
+
+.height-vh {
+	height: 100vh !important; 
+}
+
+.display-block {
+	display: block;
+}
+
+.background-none {
+	background: none;
+}
+
+.opacity {
+  opacity: .8;
+}
+
+.margin-top-content-noticia {
+  margin-top: 1em;
+}
+
+.padding-clean-important {
+  padding: 0 !important;
+}
+
+.margin-clean-important {
+  margin: 0 !important;
+}
+
+.height-content-noticia-up {
+  height: 65vh !important;
+}
+
+.height-content-noticia-down {
+  height: 35vh !important;
+}
+
+.margin-bottom-clean {
+  margin-bottom: 0 !important;
+}
+
+.margin-top-clean {
+  margin-top: 0 !important;
+}
+
+.height-media-porcentage {
+  height: 50% !important;
+}
+
+/* Style Content Boletines */
+
+#diapo {
+  position:relative;
+  height:30em;
+  margin:auto;
+  text-align:center;
+  margin: 2em 2em;
+}
+
+#diapo div {
+  display:inline-block;
+}
+
+#diapo > * + * {
+  margin-left: 5px;
+}
+
+.big_image {
+  position:absolute;
+  display:block;
+  width:100%;
+  height: 100%;
+  top:100px;
+  left:0;
+  right:0;
+  margin:0 auto;
+  opacity:0;
+  border:10px solid #FFF;
+  box-shadow: 0 2px 8px 2px #666;
+
+  -webkit-transform:scale(0.25);
+     -moz-transform:scale(0.25);
+      -ms-transform:scale(0.25);
+       -o-transform:scale(0.25);
+          transform:scale(0.25);
+
+  -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+       -o-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
+}
+
+.r_check, .on_check {
+  cursor: pointer;
+}
+
+.r_check:checked ~ label img {
+  opacity:0.25;
+  border:2px solid #006699;
+}
+
+.r_check:checked ~ .big_image {
+  opacity:1;
+
+  -webkit-transform:scale(1);
+     -moz-transform:scale(1);
+      -ms-transform:scale(1);
+       -o-transform:scale(1);
+          transform:scale(1);
+}
+
+.r_check {
+  opacity:0;
+  position:absolute;
+}
+
+label img.vignette {
+  width:100px;
+  height:75px;
+  border:2px solid #FFF;
+}
+
+.retour {
+  color:#909090;
+  font-size:1em;
+  left:1em;
+  bottom:1em;
+  position:fixed;
+  text-decoration:none;
+  font-style:italic;
+  text-shadow:1px 1px 0px #FFF;
+}
+
+.retour:hover {
+  font-style:normal;
+  color:#706040;
+}
+
+/* End Style Content Boletin */
+
+.padding-left {
+  padding-left: 0 !important;
+}

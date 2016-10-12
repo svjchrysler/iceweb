@@ -16,9 +16,8 @@
 			<div class="row margin-clean">
 				<div class="col m3 l2 padding-clean">
 					<a href="#!">
-						<img src="assets/images/institucion/logoice.png" class="responsive-img max-height-header">	
+						<img src="assets/images/institucion/logoice.png" class="responsive-img max-height-header">
 					</a>
-					
 				</div>
 
 				<div class="col m3 l2 padding-clean">
@@ -56,44 +55,44 @@
 		      		<a href="#" data-activates="mobile-demo" class="button-collapse align-horizontal-vertical"><i class="material-icons">menu</i></a>
 			      	<ul class="hide-on-med-and-down align-horizontal-vertical height-nav hide-overflow">
 				        <li class="width-item-nav">
-				        	<a href="#!" id="idsomos" class="text-color-verde text-bold text-nav-size">Quienes Somos?</a>
+				        	<a href="#!" id="btnSomos" class="text-color-verde text-bold text-nav-size active-option">Quienes Somos?</a>
 			        	</li>
 				        <li class="width-item-nav">
-				        	<a href="#!" class="text-color-verde text-bold text-nav-size">Data HUB</a>
+				        	<a href="#!" id="btnDataHub" class="text-color-verde text-bold text-nav-size inactive-option">Data HUB</a>
 			        	</li>
 				        <li class="width-item-nav">
-				        	<a href="#!" class="text-color-verde text-bold text-nav-size">Estadisticas</a>
+				        	<a href="#!" id="btnEstadisticas" class="text-color-verde text-bold text-nav-size inactive-option">Estadisticas</a>
 			        	</li>
 				        <li class="width-item-nav">
-				        	<a href="#!" class="text-color-verde text-bold text-nav-size">Noticias</a>
+				        	<a href="#!" id="btnBoletines" class="text-color-verde text-bold text-nav-size inactive-option">Boletines</a>
+			        	</li>
+			        	<li class="width-item-nav">
+				        	<a href="#!" id="btnNoticias" class="text-color-verde text-bold text-nav-size inactive-option">Noticias</a>
 			        	</li>
 				        <li class="width-item-nav">
-				        	<a href="#!" class="text-color-verde text-bold text-nav-size">Boletines</a>
-			        	</li>
-				        <li class="width-item-nav">
-				        	<a href="#!" class="text-color-verde text-bold text-nav-size">Contacto</a>
+				        	<a href="#!" id="btnContacto" class="text-color-verde text-bold text-nav-size inactive-option">Contacto</a>
 			        	</li>
 			      	</ul>
 					<ul id="mobile-demo" class="side-nav">
 						<li class="no-padding">
 		          			<ul class="collapsible collapsible-accordion">
 								<li class="bold">
-									<a href="#!" id="idsomos" class="waves-effect waves-teal">Quienes Somos?</a>
+									<a href="#!" id="btnSomosM" class="waves-effect waves-teal active-option">Quienes Somos?</a>
 								</li>
 								<li class="bold">
-									<a href="#!" class="waves-effect waves-teal">Data HUB</a>
+									<a href="#!" id="btnDataHubM" class="waves-effect waves-teal inactive-option">Data HUB</a>
 								</li>
 								<li class="bold">
-									<a href="#!" class="waves-effect waves-teal">Estadisticas</a>
+									<a href="#!" id="btnEstadisticasM" class="waves-effect waves-teal inactive-option">Estadisticas</a>
 								</li>
 								<li class="bold">
-									<a href="#!" class="waves-effect waves-teal">Noticias</a>
+									<a href="#!" id="btnBoletinesM" class="waves-effect waves-teal inactive-option">Boletines</a>
 								</li>
 								<li class="bold">
-									<a href="#!" class="waves-effect waves-teal">Boletines</a>
+									<a href="#!" id="btnNoticiasM" class="waves-effect waves-teal inactive-option">Noticias</a>
 								</li>
 								<li class="bold">
-									<a href="#!" class="waves-effect waves-teal">Contacto</a>
+									<a href="#!" id="btnContactoM" class="waves-effect waves-teal inactive-option">Contacto</a>
 								</li>
 			          		</ul>
 			        	</li>
@@ -105,10 +104,10 @@
 
 
 	<div class="parallax-container align-horizontal-vertical background-image" id="content-somos">
-		<img src="assets/images/institucion/logoice.png">
+		<img src="assets/images/institucion/logoice.png" />
     </div>
 
-    <div class="parallax-container align-horizontal-vertical">
+    <div class="parallax-container align-horizontal-vertical" id="content-datahub">
     	<div class="parallax">
     		<img src="assets/images/institucion/datahub.png" class="width-full">
     	</div>
@@ -410,12 +409,12 @@
 	</div>
 
 	<div class="parallax-container" id="content-contacto">
-		<div class="row">
-			<div class="col m6 l6">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d2686.4393015116693!2d-63.18221908053244!3d-17.78234714382474!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x0%3A0x37ace253ab97ec04!2sGobierno+Municipal+de+Santa+Cruz+de+la+Sierra!3m2!1d-17.7822702!2d-63.181950199999996!5e0!3m2!1sen!2sbo!4v1471529867605" width="90%" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe>
+		<div class="row height-vh-important align-horizontal-vertical">
+			<div class="col m6 l6 height-vh-important">
+				<iframe class="align-horizontal-vertical" src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d2686.4393015116693!2d-63.18221908053244!3d-17.78234714382474!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x0%3A0x37ace253ab97ec04!2sGobierno+Municipal+de+Santa+Cruz+de+la+Sierra!3m2!1d-17.7822702!2d-63.181950199999996!5e0!3m2!1sen!2sbo!4v1471529867605" width="90%" height="70%" frameborder="0" style="border:0;" allowfullscreen></iframe>
 			</div>
 
-			<div class="col m6 l6">
+			<div class="col m6 l6 height-vh-important align-horizontal-vertical">
 				<form method="POST">
 	    			<div class="row margin-botton">
 	    				<div class="col s12">
@@ -433,11 +432,11 @@
 	    					<div class="row">
 		    					<div class="input-field col s6 margin-botton">
 		    						<label for="first_name">Telefono</label>	
-		    						<input placeholder="Telefono" required id="first_name" type="number" class="validate">
+		    						<input placeholder="Telefono" required id="first_name" type="text" class="validate">
 		    					</div>
 		    					<div class="input-field col s6 margin-botton">
 		    						<label for="first_name">Movil</label>
-		    						<input placeholder="Movil" required id="first_name" type="number" class="validate">
+		    						<input placeholder="Movil" required id="first_name" type="text" class="validate">
 		    					</div>
 		    				</div>	
 	    				</div>

@@ -6,6 +6,7 @@
 	<title>ICE (Instituto Cruceno de Estadistica)</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/materialize.min.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/circle-menu.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -28,7 +29,9 @@
 
 				<div class="col m5 l7 padding-clean-important height-header align-vertical">
 					<input type="search" class="margin-clean margin-input-search" placeholder="Buscar...">
-					<button class="btn btn-color"><i class="material-icons">search</i></button>
+					<button class="btn btn-color">
+						<i class="material-icons">search</i>
+					</button>
 				</div>
 
 				<div class="col m1 l1 padding-clean max-height-header">
@@ -107,10 +110,7 @@
 		<img src="assets/images/institucion/logoice.png" />
     </div>
 
-    <div class="parallax-container align-horizontal-vertical" id="content-datahub">
-    	<div class="parallax">
-    		<img src="assets/images/institucion/datahub.png" class="width-full">
-    	</div>
+    <div class="parallax-container align-horizontal-vertical background-datahub animated" id="content-datahub">
     </div>
 
     <div class="parallax-container align-horizontal-vertical background-image" id="content-estadisticas">
@@ -121,7 +121,7 @@
     		<div class="col s12 m2 l2 margin-top-menu-1" id="content-option-1">
     			<div class="c-circle-menu js-menu-4 align-circle">
 					
-					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block margin-clean padding-clean elevacion-circle-menu" id="option-1" >
+					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block margin-clean padding-clean elevacion-circle-menu background-none" id="option-1" >
 						<img src="assets/images/icons-menu-circle/agricultura.png" class="position-absolute custom-circle">
 					</div>
 				  	<ul class="c-circle-menu__items">
@@ -147,7 +147,7 @@
 
     		<div class="col s12 m2 l2 margin-top-menu-2" id="content-option-2">
 				<div class="c-circle-menu js-menu-3 align-circle">
-					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block margin-clean padding-clean elevacion-circle-menu" id="option-2" >
+					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block margin-clean padding-clean elevacion-circle-menu background-none" id="option-2" >
 						<img src="assets/images/icons-menu-circle/exportacion.png" class="position-absolute custom-circle">
 					</div>
 				  	<ul class="c-circle-menu__items">
@@ -173,7 +173,7 @@
 
     		<div class="col s12 m2 l2 margin-top-menu-3" id="content-option-3">
 				<div class="c-circle-menu js-menu-2 align-circle">
-					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block margin-clean padding-clean elevacion-circle-menu" id="option-3">
+					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block margin-clean padding-clean elevacion-circle-menu background-none" id="option-3">
 						<img src="assets/images/icons-menu-circle/people.png" class="position-absolute custom-circle">
 					</div>
 				  	<ul class="c-circle-menu__items">
@@ -199,7 +199,7 @@
 
     		<div class="col s12 m2 l2 margin-top-menu-2" id="content-option-4">
 				<div class="c-circle-menu js-menu-1 align-circle">
-					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block margin-clean padding-clean elevacion-circle-menu" id="option-4" >
+					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block margin-clean padding-clean elevacion-circle-menu background-none" id="option-4" >
 						<img src="assets/images/icons-menu-circle/ganaderia.png" class="position-absolute custom-circle">
 					</div>
 				  	<ul class="c-circle-menu__items">
@@ -225,7 +225,7 @@
 
     		<div class="col s12 m2 l2 margin-top-menu-1" id="content-option-5">
 				<div class="c-circle-menu js-menu align-circle">
-					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block margin-clean padding-clean elevacion-circle-menu" id="option-5">
+					<div class="c-circle-menu__toggle js-menu-toggle position-relative display-block margin-clean padding-clean elevacion-circle-menu background-none" id="option-5">
 						<img src="assets/images/icons-menu-circle/industria.png" class="position-absolute custom-circle">
 					</div>
 				  	<ul class="c-circle-menu__items">
@@ -254,52 +254,10 @@
     	</div>
     </div>
 	
-	<div class="parallax-container" id="content-boletines">
-
-		<!-- <div class="slider">
-		    <ul class="slides height-vh">
-		      	<li>
-		      		<a href="#!">
-		      			<img src="assets/images/institucion/logoice.png">
-				        <div class="caption center-align">
-				          	<h3>This is our big Tagline!</h3>
-				          	<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-				        </div>	
-		      		</a>			        
-		      	</li>
-		      	<li>
-		      		<a href="#!">
-		      			<img src="assets/images/institucion/logogobernacion.png">
-				        <div class="caption left-align">
-				          	<h3>Left Aligned Caption</h3>
-			         	 	<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-				        </div>	
-		      		</a>			        
-			      </li>
-		      	<li>
-		      		<a href="#!">
-		      			<img src="assets/images/institucion/logoice.png">
-				        <div class="caption right-align">
-			          		<h3>Right Aligned Caption</h3>
-			          		<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-				        </div>	
-		      		</a>
-			        
-	    	  	</li>
-		      	<li>
-		      		<a href="#!">
-		      			<img src="assets/images/institucion/logogobernacion.png">
-				        <div class="caption center-align">
-			          		<h3>This is our big Tagline!</h3>
-				          	<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-				        </div>	
-		      		</a>			        
-		      	</li>
-		    </ul>
-	  	</div> -->
+	<div class="parallax-container margin-top-datahub" id="content-boletines">
 
 	  	<div id="diapo">
-	    	<div>
+	    	<div class="align-horizontal-vertical">
 		      	<input type="radio" id="check_1" name="check" class="r_check" checked="checked">
 		      	<label for="check_1" class="on_check">
 		        	<img class="vignette" src="http://nosmoking.developpez.com/tutoriels/css/galerie-css3-sans-javascript/fichiers/images/image_001.jpg" alt="">
@@ -339,19 +297,18 @@
 		      	<img class="big_image" src="http://nosmoking.developpez.com/tutoriels/css/galerie-css3-sans-javascript/fichiers/images/image_005.jpg" alt="">
 		    </div>
 	  	</div>
-
 	</div>
 
 	<div class="parallax-container margin-top-content-noticia" id="content-noticias">
-		<div class="row margin-clean-important">
-			<div class="col l4 padding-clean-important">
-				<div class="row margin-clean-important">
-					<div class="col l12 padding-clean-important align-horizontal-vertical">
+		<div class="row height-content-noticia-up">
+			<div class="col l4 padding-right-clean">
+				<div class="row">
+					<div class="col l12 align-horizontal-vertical">
 						<a href="#!">
 							<img src="assets/images/noticias/image1.jpg" class="width-full">		
 						</a>
 					</div>
-					<div class="col l12 padding-clean-important align-horizontal-vertical">
+					<div class="col l12 align-horizontal-vertical">
 						<a href="#!">
 							<img src="assets/images/noticias/image1.jpg" class="width-full">	
 						</a>						
@@ -359,56 +316,70 @@
 				</div>
 			</div>
 
-			<div class="col l8 padding-clean-important">
+			<div class="col l8 padding-left-clean">
 				<div class="slider">
 				    <ul class="slides">
 				      	<li>
-					        <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
-					        <div class="caption center-align">
-					          	<h3>This is our big Tagline!</h3>
-					          	<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-					        </div>
+				      		<a href="#!">
+				      			<img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+						        <div class="caption center-align">
+						          	<h3>This is our big Tagline!</h3>
+						          	<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+						        </div>	
+				      		</a>					        
 				      	</li>
 				      	<li>
-					        <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
-					        <div class="caption left-align">
-					          	<h3>Left Aligned Caption</h3>
-				         	 	<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-					        </div>
+				      		<a href="#!">
+				      			<img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+						        <div class="caption left-align">
+						          	<h3>Left Aligned Caption</h3>
+					         	 	<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+						        </div>	
+				      		</a>					        
 					      </li>
 				      	<li>
-					        <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
-					        <div class="caption right-align">
-				          		<h3>Right Aligned Caption</h3>
-				          		<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-					        </div>
+				      		<a href="#!">
+				      			<img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+						        <div class="caption right-align">
+					          		<h3>Right Aligned Caption</h3>
+					          		<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+						        </div>	
+				      		</a>					        
 			    	  	</li>
 				      	<li>
-					        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
-					        <div class="caption center-align">
-				          		<h3>This is our big Tagline!</h3>
-					          	<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-					        </div>
+			      			<a href="#!">
+				      			<img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+						        <div class="caption center-align">
+					          		<h3>This is our big Tagline!</h3>
+						          	<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+						        </div>	
+				      		</a>					        
 				      	</li>
 				    </ul>
 			  	</div>
 			</div>
 		</div>
 
-		<div class="row margin-clean-important">
-			<div class="col l4 padding-clean-important">
-				<img src="assets/images/noticias/image2.jpg" class="width-full">
+		<div class="row align-horizontal-vertical height-content-noticia-down">
+			<div class="col l4">
+				<a href="#!">
+					<img src="assets/images/noticias/image2.jpg" class="width-full">	
+				</a>				
 			</div>
-			<div class="col l4 padding-clean-important">
-				<img src="assets/images/noticias/image1.jpg" class="width-full">
+			<div class="col l4">
+				<a href="#!">
+					<img src="assets/images/noticias/image1.jpg" class="width-full">
+				</a>
 			</div>
-			<div class="col l4 padding-clean-important">
-				<img src="assets/images/noticias/image2.jpg" class="width-full">
+			<div class="col l4">
+				<a href="#!">
+					<img src="assets/images/noticias/image2.jpg" class="width-full">
+				</a>
 			</div>
 		</div>
 	</div>
 
-	<div class="parallax-container" id="content-contacto">
+	<div class="parallax-container background-image" id="content-contacto">
 		<div class="row height-vh-important align-horizontal-vertical">
 			<div class="col m6 l6 height-vh-important">
 				<iframe class="align-horizontal-vertical" src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d2686.4393015116693!2d-63.18221908053244!3d-17.78234714382474!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x0%3A0x37ace253ab97ec04!2sGobierno+Municipal+de+Santa+Cruz+de+la+Sierra!3m2!1d-17.7822702!2d-63.181950199999996!5e0!3m2!1sen!2sbo!4v1471529867605" width="90%" height="70%" frameborder="0" style="border:0;" allowfullscreen></iframe>

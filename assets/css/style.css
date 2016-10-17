@@ -61,8 +61,8 @@ nav {
 }
 
 .align-vertical {
-	display: flex;
-	align-items: center;
+	display: flex !important;
+	align-items: center !important;
 }
 
 .text-title-nav {
@@ -78,17 +78,27 @@ nav {
 	.max-height-nav {
 		max-height: 4em !important;
 	}
+
+  .width-image-somos {
+    width: 50% !important;
+  }
 }
 
 @media (max-width: 980px) {
 	nav {
 		background-color: #4ACA74;
 		box-shadow: 0 10px 0 10px;
-  	}
+	}
 
-  	.shadow-nav-phone {
+	.shadow-nav-phone {
 		box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 0 0 10px rgba(0, 0, 0, .2) inset;
 	}
+
+  .background-datahub {
+    background-image: url('../images/institucion/datahub-vertical.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 @media (min-width: 2000px) {
@@ -102,7 +112,7 @@ nav {
   }
 
   .height-nav {
-	height: 5em;
+	 height: 4em;
   }
 }
 
@@ -155,7 +165,7 @@ nav {
 }
 
 .parallax-container {
-	height: 100vh;
+	height: 100vh; 
 }
 
 .elevation-header {
@@ -201,13 +211,43 @@ nav {
 }
 
 .height-content-noticia-up {
-  /*height: 65vh !important;*/
-  height: 70% !important;
+  height: 65vh !important;
+  /*height: 70% !important;*/
+}
+
+.height-vh-90 {
+  height: 100% !important;
 }
 
 .height-content-noticia-down {
-  /*height: 35vh !important;*/
-  height: 30% !important;
+  height: 35vh !important;
+  /*height: 30% !important;*/
+}
+
+@media (max-width : 800px) { 
+
+  .margin-top-menu-1 {
+    margin-top: 0;
+  }
+
+  .margin-top-menu-2 {
+    margin-top: 0;
+  }
+
+  .margin-top-menu-3 {
+    margin-top: 0;
+  }
+  
+  .c-circle-menu__toggle {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+  }
+
+}
+
+.z-index-content-estadisticas {
+  z-index: 10 !important;
 }
 
 .margin-bottom-clean {
@@ -225,10 +265,10 @@ nav {
 /* Style Content Boletines */
 
 #diapo {
-  position:relative;
-  height:30em;
-  margin:auto;
-  text-align:center;
+  position: relative;
+  height: 30em;
+  margin: auto;
+  text-align: center;
   margin: 2em 2em;
 }
 
@@ -244,7 +284,7 @@ nav {
   position:absolute;
   display:block;
   width:100%;
-  height: 72vh;
+  height: 100%;
   top:100px;
   left:0;
   right:0;
@@ -264,6 +304,10 @@ nav {
       -ms-transition: all 1s ease-in-out;
        -o-transition: all 1s ease-in-out;
           transition: all 1s ease-in-out;
+}
+
+.big_image:hover {
+  cursor: pointer;
 }
 
 .r_check, .on_check {
@@ -349,4 +393,12 @@ label img.vignette {
 
 .padding-left-clean {
   padding-left: 0 !important;
+}
+
+.z-index-content-datahub {
+  z-index: 2020 !important;
+}
+
+.width-image-somos {
+  width: 30%;
 }

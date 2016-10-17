@@ -168,6 +168,10 @@ nav {
 	height: 100vh; 
 }
 
+.h5-bold {
+  font-weight: 700;
+}
+
 .elevation-header {
 	z-index: 1020;
 }
@@ -198,8 +202,8 @@ nav {
   opacity: .8;
 }
 
-.margin-top-content-noticia {
-  margin-top: 1em;
+.padding-top-content-noticia {
+  padding-top: 5em !important;
 }
 
 .padding-clean-important {
@@ -212,7 +216,6 @@ nav {
 
 .height-content-noticia-up {
   height: 65vh !important;
-  /*height: 70% !important;*/
 }
 
 .height-vh-90 {
@@ -267,7 +270,6 @@ nav {
 #diapo {
   position: relative;
   height: 30em;
-  margin: auto;
   text-align: center;
   margin: 2em 2em;
 }
@@ -319,7 +321,7 @@ nav {
   border:2px solid #006699;
 }
 
-.r_check:checked ~ .big_image {
+.r_check:checked ~ a .big_image {
   opacity:1;
 
   -webkit-transform:scale(1);

@@ -64,23 +64,23 @@ function configEventBtnUp() {
 
 function optionBoletines() {
 	$('#img-boletin-one').click(function() {
-
+		
 	})
 
 	$('#img-boletin-two').click(function() {
-		
+		console.log('2')
 	})
 
 	$('#img-boletin-three').click(function() {
-		
+		console.log('3')
 	})
 
 	$('#img-boletin-four').click(function() {
-		
+		console.log('4')
 	})
 
 	$('#img-boletin-five').click(function() {
-		
+		console.log('5')
 	})
 }
 

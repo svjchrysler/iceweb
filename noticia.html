@@ -6,7 +6,6 @@
 	<title>Noticias Estadisticas</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/materialize.min.css">
-	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 
 </head>
@@ -88,8 +87,35 @@
 		</div>
 	</div>
 
+	<i class="ir-arriba material-icons">keyboard_arrow_up</i>
+
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/materialize.min.js"></script>
-	<script src="assets/js/script.js"></script>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+			$('.ir-arriba').click(function(){
+				$('body, html').animate({
+					scrollTop: '0px'
+				}, 300)
+			})
+
+			$(window).scroll(function() {
+				viewBtnUp()
+			})
+		})
+	
+		function viewBtnUp() {
+			if ($(this).scrollTop() > 0) {
+				$('.ir-arriba').slideDown(300)	
+			} else {
+				$('.ir-arriba').slideUp(300)
+			}
+		}	
+		
+
+		
+	</script>
 </body>
 </html>

@@ -384,6 +384,8 @@ label img.vignette {
 }
 
 .background-btn-back {
+  font-weight: 700 !important;
+  color: #000 !important;
   z-index: 2020 !important;
 }
 
@@ -423,4 +425,17 @@ label img.vignette {
 
 .tamano-logo-gobernacion {
   width: 10em;
+}
+
+.ir-arriba {
+  display:none;
+  padding:10px;
+  background:#4ACA74;
+  font-size:30px;
+  color:#fff;
+  cursor:pointer;
+  position: fixed;
+  bottom:20px;
+  right:20px;
+  z-index: 1010;
 }

@@ -31,6 +31,7 @@ function initEvents() {
 	
 	$(window).scroll(function() {
 		alignMenuNav()
+		viewBtnUp()
 	})
 
 	$('#content-datahub').click(function() {
@@ -41,6 +42,24 @@ function initEvents() {
 	configEventMenuNav()
 	configInitEventMenuOption()
 	optionBoletines()
+	configEventBtnUp()
+}
+
+function viewBtnUp() {
+	if ($(this).scrollTop() > 0) {
+		$('.ir-arriba').slideDown(300)	
+	} else {
+		$('.ir-arriba').slideUp(300)
+	}
+	
+}
+
+function configEventBtnUp() {
+	$('.ir-arriba').click(function(){
+		$('body, html').animate({
+			scrollTop: '0px'
+		}, 300)
+	})
 }
 
 function optionBoletines() {

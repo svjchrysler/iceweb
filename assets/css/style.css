@@ -383,6 +383,10 @@ label img.vignette {
   background-position: center;
 }
 
+.background-btn-back {
+  z-index: 2020 !important;
+}
+
 .margin-top-datahub {
   padding-top: 2em !important;
 }
@@ -401,4 +405,22 @@ label img.vignette {
 
 .width-image-somos {
   width: 30%;
+}
+
+.height-banner {
+  max-height: 25em !important;
+  overflow: hidden;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.tamano-icons-estadistica {
+  width: 3em;
+  padding: 5px;
+}
+
+.tamano-logo-gobernacion {
+  width: 10em;
 }

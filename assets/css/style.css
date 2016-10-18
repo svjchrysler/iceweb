@@ -441,3 +441,18 @@ label img.vignette {
   right:20px;
   z-index: 1010;
 }
+
+.background-logoice {
+  background: url('../images/institucion/logoice.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tamano-image-logo {
+  width: 30% !important;
+}
+
+.padding-left-right-carousel {
+  padding-left: 2em;
+  padding-right: 2em;
+}

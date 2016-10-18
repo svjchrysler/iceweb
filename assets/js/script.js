@@ -5,9 +5,14 @@ $(document).ready(function() {
 function init() {
 	initSideNav()
 	initSlider()
+	initCarousel()
 	initParallax()
 	initEvents()
 	initMenuCircle()
+}
+
+function initCarousel() {
+	$('.carousel.carousel-slider').carousel({full_width: true, indicators: false});
 }
 
 function initMenuCircle() {
@@ -43,6 +48,25 @@ function initEvents() {
 	configInitEventMenuOption()
 	optionBoletines()
 	configEventBtnUp()
+	configEventDocument()
+}
+
+function configEventDocument() {
+	$(document).keydown(function(e) {
+		var height = $(window).scrollTop();
+
+	    if(height <= ($("#content-datahub").offset().top - 100)) {
+	    	//Right
+			if (e.keyCode == 39) {
+				$('.carousel').carousel('next');
+			}	
+
+			//Left
+			if (e.keyCode == 37) {
+				$('.carousel').carousel('prev');
+			}		
+	    }
+	})
 }
 
 function viewBtnUp() {

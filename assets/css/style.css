@@ -476,3 +476,52 @@ label img.vignette {
 .padding-right-em {
   padding-right: 3em !important;
 }
+
+@page {
+  size: A4 portrait;
+}
+
+@page:first {
+  margin-top: 10cm;
+}
+
+
+@media print { 
+  .noPrint {     
+    display:none !important; 
+  } 
+  .header-print {
+    display: block !important;
+    page-break-after: always !important;
+  }
+}
+
+#img-ice {
+  background-image: url('../images/institucion/logoice.png') !important;
+  background-repeat: no-repeat !important;
+  height: 70px !important;
+}
+
+#img-gobernacion {
+  background-image: url('../images/institucion/logogobernacion.png') !important;
+  background-repeat: no-repeat !important; 
+  
+  height: 70px !important;
+}
+
+.cabecera {
+  height: 75px;
+}
+
+.header-print {
+  display: none;
+}
+
+.z-content-header {
+  z-index: 1010;
+  height: 75px;
+}
+
+.padding-content-header {
+  padding-top: 5em;
+}

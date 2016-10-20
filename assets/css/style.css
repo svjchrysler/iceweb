@@ -478,11 +478,7 @@ label img.vignette {
 }
 
 @page {
-  size: A4 portrait;
-}
-
-@page:first {
-  margin-top: 10cm;
+  size: 'A4 portrait';
 }
 
 
@@ -494,19 +490,6 @@ label img.vignette {
     display: block !important;
     page-break-after: always !important;
   }
-}
-
-#img-ice {
-  background-image: url('../images/institucion/logoice.png') !important;
-  background-repeat: no-repeat !important;
-  height: 70px !important;
-}
-
-#img-gobernacion {
-  background-image: url('../images/institucion/logogobernacion.png') !important;
-  background-repeat: no-repeat !important; 
-  
-  height: 70px !important;
 }
 
 .cabecera {
